@@ -6,7 +6,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class DriverLocationDTO {
-    private String driverId;
+    private Integer driverId;
     private double latitude;
     private double longitude;
 

@@ -28,11 +28,14 @@ public class Booking {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "driver_id")
     private Driver driver;
-    
+
     @Column(nullable = false)
-    private String pickupLocation;
-    
+    private String pickupLocationLatitude;
+
     @Column(nullable = false)
+    private String pickupLocationLongitude;
+
+    @Column(nullable = true)
     private String dropoffLocation;
     
     @Enumerated(EnumType.STRING)
